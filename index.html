@@ -1,1 +1,18 @@
-<h1> Amigo Secreto </h1>
+<!DOCTYPE html>
+
+<head>
+    <title>Today's Date</title>
+</head>
+
+<body>
+  <h1 id="result"> Hey </h1>
+</body>
+
+<script>
+    let d = new Date();
+    var url_string = window.location.href
+    var url = new URL(url_string);
+    var result = url.searchParams.get("result");
+    document.getElementById("result").innerHTML = result
+</script>
+</html>
