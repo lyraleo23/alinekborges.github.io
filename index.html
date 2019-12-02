@@ -1,26 +1,63 @@
 <!DOCTYPE html>
 
+<style>
+
+#content {
+  clear: both;
+  position: relative;
+  margin-top: 10%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: -50px;
+  margin-right: -50px;
+  background: #159957;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue";
+  color: white;
+  font-weight: 100;
+  line-height: 48.4px;
+}
+
+h1 { font-size: 44px; font-style: normal; font-weight: 700; }
+h3 { font-size: 30px; font-style: normal; font-variant: normal; font-weight: 100; }
+
+</style>
+
 <head>
     <title>Amigo Secreto</title>
 </head>
 
 <body>
-  <h1 id="result"> Hey </h1>
 
-  <br><br>
-<label>nome</label>
-<div id="nome"></div>
-
-<br>
+  <div id="content">
+      <h3 id="top">Ops! Deu algum erro</h3>
+      <h1 id="result">...</h1>
+      <p> * não compartilhe esse link com ninguém para não estragar a brincadeira! </p>
+  </div>
 
 <script>
     var url_string = window.location.href
     var url = new URL(url_string);
-    var result = url.searchParams.get("r");
-    var name = atob(result)
-    document.getElementById("nome").innerHTML = name
+    var query = url.searchParams.get("r");
+
+  var result = {'QnJ1bmE=\n': 'QWxleGFuZHJl\n', 'QWxpbmU=\n': 'QnJ1bmE=\n', 'QWxleGFuZHJl\n': 'QWxpbmU=\n'}
+
+  var secretSanta = atob(result[query])
+  var name = atob(query)
+
+  document.getElementById("result").innerHTML = secretSanta
+  document.getElementById("top").innerHTML = "Oi ${name}! No amigo secreto você tirou"
+
 </script>
 </body>
-
 
 </html>
