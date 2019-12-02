@@ -49,7 +49,7 @@ h3 { font-size: 30px; font-style: normal; font-variant: normal; font-weight: 100
     var url = new URL(url_string);
     var query = url.searchParams.get("r");
 
-  var result = {'QnJ1bmE=\n': 'QWxleGFuZHJl\n', 'QWxpbmU=\n': 'QnJ1bmE=\n', 'QWxleGFuZHJl\n': 'QWxpbmU=\n'}
+  var result = {'QnJ1bmE=': 'QWxpbmU=', 'QWxpbmU=': 'QWxleGFuZHJl', 'QWxleGFuZHJl': 'QnJ1bmE='}
 
   var secretSanta = atob(result[query])
   var name = atob(query)
