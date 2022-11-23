@@ -57,17 +57,18 @@ p { font-size: 20px;
     var url_string = window.location.href
     var url = new URL(url_string);
     var query = url.searchParams.get("r");
+    var nameEncoded = url.searchParams.get("o");
 
-    const decoded = atob(query)
+    const secretSanta = decoatob(query).replace(/[^a-zA-Z ]/g, '');
 
-    const name = decoded.replace(/[^a-zA-Z ]/g, '');
+    const name = atob(nameEncoded).replace(/[^a-zA-Z ]/g, '');
     // console.log(name)
 
   // var secretSanta = atob(result[query])
   // var name = atob(query)
 
-  document.getElementById("result").innerHTML = name
-  // document.getElementById("top").innerHTML = 'Oie '+ name + '! No amigo secreto você tirou'
+  document.getElementById("result").innerHTML = secretSanta
+  document.getElementById("top").innerHTML = 'Oie '+ name + '! No amigo secreto você tirou'
 
 </script>
 </body>
