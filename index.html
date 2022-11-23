@@ -56,12 +56,17 @@ p { font-size: 20px;
 <script>
     var url_string = window.location.href
     var url = new URL(url_string);
-    var query = url.searchParams.get("r");
+    var secretSantaEncoded = url.searchParams.get("r");
     var nameEncoded = url.searchParams.get("o");
 
-    const secretSanta = decoatob(query).replace(/[^a-zA-Z ]/g, '');
+    console.log(secretSantaEncoded);
+    console.log(nameEncoded);
 
+    const secretSanta = decoatob(secretSantaEncoded).replace(/[^a-zA-Z ]/g, '');
     const name = atob(nameEncoded).replace(/[^a-zA-Z ]/g, '');
+
+    console.log(secretSanta);
+    console.log(name);
     // console.log(name)
 
   // var secretSanta = atob(result[query])
