@@ -62,7 +62,7 @@ p { font-size: 20px;
     console.log(secretSantaEncoded);
     console.log(nameEncoded);
 
-    const secretSanta = decoatob(secretSantaEncoded).replace(/[^a-zA-Z ]/g, '');
+    const secretSanta = atob(secretSantaEncoded).replace(/[^a-zA-Z ]/g, '');
     const name = atob(nameEncoded).replace(/[^a-zA-Z ]/g, '');
 
     console.log(secretSanta);
