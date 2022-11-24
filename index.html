@@ -58,6 +58,7 @@ p { font-size: 20px;
     var url = new URL(url_string);
     var secretSantaEncoded = url.searchParams.get("r");
     var nameEncoded = url.searchParams.get("o");
+    secretSantaEncoded = secretSantaEncoded.replace(" ", "+")
 
     console.log(secretSantaEncoded);
     console.log(nameEncoded);
