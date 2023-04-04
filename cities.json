@@ -41,42 +41,30 @@
     "photoURL": "https://maps.wikimedia.org/img/osm-intl,10,-12.45,130.83333333333,250x250@2x.png?lang=pt&domain=pt.wikipedia.org&title=Darwin+%28Austr%C3%A1lia%29&revid=64963310&groups=_183a823e33114c2f559a9e6e22d078b9f13d1b48"
 }, 
 {
-    "name": "Canberra", 
-    "country": "Australia", 
-    "lat": -35.28346, 
-    "long": 149.12807
-}, 
-{
-    "name": "San Francisco", 
-    "country": "United States", 
-    "lat": 37.773972, 
-    "long": -122.431297
-}, 
-{
     "name": "New York", 
     "country": "United States", 
     "lat": 40.71427, 
     "long": -74.00597,
-    "photoURL": "https://maps.wikimedia.org/img/osm-intl,4,a,a,280x220@2x.png?lang=pt&domain=pt.wikipedia.org&title=Nova+Iorque&revid=65424511&groups=_3857b2cb3d84078c6810f73f099e76f2df9e1c97"
+    "photoURL": "https://maps.wikimedia.org/img/osm-intl,12,40.6974881,-73.979681,250x250@2x.png?lang=pt"
 }, 
 {
     "name": "Seattle", 
     "country": "United States", 
     "lat": 47.60621, 
     "long": -122.33207,
-    "photoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Melburnian_Skyline.jpg/540px-Melburnian_Skyline.jpg"
+    "photoURL": "47.6131746,-122.4821468"
 }, 
 {
     "name": "London", 
     "country": "England", 
     "lat": 51.51279, 
     "long": -0.09184,
-    "photoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Melburnian_Skyline.jpg/540px-Melburnian_Skyline.jpg"
+    "photoURL": "https://maps.wikimedia.org/img/osm-intl,12,51.5098188,-0.1404676,250x250@2x.png?lang=pt"
 }, 
 {
     "name": "Amsterdam", 
     "country": "Netherlands", 
     "lat": 52.37403, 
     "long": 4.88969,
-    "photoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Melburnian_Skyline.jpg/540px-Melburnian_Skyline.jpg"
+    "photoURL": "https://maps.wikimedia.org/img/osm-intl,12,52.3673826,4.8853655,250x250@2x.png?lang=pt"
 }]
