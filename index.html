@@ -1,82 +1,37 @@
 <!DOCTYPE html>
-
-<style>
-
-#content {
-  clear: both;
-  position: relative;
-  margin-top: 10%;
-
-  padding-top: 20%;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-left: -10px;
-  margin-right: -10px;
-  background: #159957;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  font-family: "Helvetica Neue";
-  color: white;
-  font-weight: 200;
-  line-height: 48.4px;
-  text-align: center;
-}
-
-h1 { font-size: 44px; font-style: normal; font-weight: 700; }
-h3 { font-size: 30px; font-style: normal; font-variant: normal; font-weight: 200; }
-p { font-size: 20px;
-    line-height: 20px;
-    font-weight: 200;
-    color: darkslategrey; }
-
-</style>
-
-<head>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Amigo Secreto</title>
-</head>
 
-<body>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-  <div id="content">
-      <h3 id="top">Ops! Deu algum erro</h3>
-      <h1 id="result">...</h1>
-  </div>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Amigo Secreto</h1>
+        <!-- <h1><img src="Images/logo.png"></h1> -->
+      </div>
+    </header>
 
-  <p class="footer"> * não compartilhe esse link com ninguém para não estragar a brincadeira! </p>
+    <main>
+      <div id="content">
+        <h3 id="top">Ops! Deu algum erro</h3>
+        <h1 id="result">...</h1>
+      </div>
+      <div>
+        <p class="warning">* não compartilhe esse link com ninguém para não estragar a brincadeira!</p>
+      </div>
 
-<script>
-    var url_string = window.location.href
-    var url = new URL(url_string);
-    var secretSantaEncoded = url.searchParams.get("r");
-    var nameEncoded = url.searchParams.get("o");
-    secretSantaEncoded = secretSantaEncoded.replace(" ", "+")
+      <script src="main.js"></script>
+    </main>
 
-    console.log(secretSantaEncoded);
-    console.log(nameEncoded);
-
-    const secretSanta = atob(secretSantaEncoded).replace(/[^a-zA-Z ]/g, '');
-    const name = atob(nameEncoded).replace(/[^a-zA-Z ]/g, '');
-
-    console.log(secretSanta);
-    console.log(name);
-    // console.log(name)
-
-  // var secretSanta = atob(result[query])
-  // var name = atob(query)
-
-  document.getElementById("result").innerHTML = secretSanta
-  document.getElementById("top").innerHTML = 'Oi '+ name + '! No amigo secreto você tirou'
-
-</script>
-</body>
-
+    <footer>
+      <!-- <h1><img src="Images/logoMafagrafos.png"></h1> -->
+      <p class="copyright">&copy; Copyright Mafagrafos Ltda.</p>
+    </footer>
+  </body>
 </html>
