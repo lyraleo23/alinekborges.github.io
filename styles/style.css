@@ -1,18 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --primary-color: #155799;
+  --secundary-color: #159957;
+  --primary-text-color: white;
+  --secundary-text-color: #159957;
+  --background-color: #F0F0F0;
+  --warning-background-color: #222;
+  --primary-font: 'Lato', sans-serif;
+}
+
 body {
   box-sizing: border-box;
-  font-family: "Helvetica Neue", sans-serif;
-  color: white;
+  font-family: var(--primary-font);
+  color: var(--primary-text-color);
   font-size: 20px;
   font-weight: 300;
   line-height: 1.6;
   text-align: center;
-  background-color: #f0f0f0;
+  background-color: var(--background-color);
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: #ffffff;
+  background: var(--background-color);
   padding: 1% 2%;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -31,7 +43,7 @@ nav {
 }
 
 h1 {
-  color: #159957;
+  color: var(--secundary-text-color);
   font-size: 40px;
   font-style: normal;
   margin-bottom: 1%;
@@ -40,15 +52,15 @@ h1 {
 #content {
   margin-top: 2%;
   padding: 30px;
-  background: #159957;
-  background: -webkit-linear-gradient(to right, #155799, #159957);
-  background: linear-gradient(to right, #155799, #159957);
+  background: var(--secundary-color);
+  background: -webkit-linear-gradient(to right, var(--primary-color), var(--secundary-color));
+  background: linear-gradient(to right, var(--primary-color), var(--secundary-color));
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .warning {
-  background-color: #222;
+  background-color: var(--warning-background-color);
   font-size: 18px;
   line-height: 1.5;
   font-weight: 300;
@@ -75,14 +87,12 @@ h1 {
 
 }
 
-/* Estilos do Rodapé */
 footer {
   text-align: center;
   padding: 1% 0;
-  background-color: #f0f0f0;
+  background-color: var(--background-color);
 }
 
-/* Estilos do Texto de Direitos Autorais */
 .copyright {
   color: #666;
   font-size: 14px;
