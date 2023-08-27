@@ -2,35 +2,51 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Amigo Secreto</title>
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
   </head>
 
   <body>
     <header>
-      <div class="logo">
+      <nav>
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="apps.html" class="nav__link">Aplicativos</a>
+      </nav>
+
+      <section class="logo">
         <h1>Amigo Secreto</h1>
-        <!-- <h1><img src="Images/logo.png"></h1> -->
-      </div>
+        <img src="Images/logo.png" alt="Logo aplicativo amigo secreto">
+      </section>
     </header>
 
     <main>
-      <div id="content">
-        <h3 id="top">Ops! Deu algum erro</h3>
-        <h1 id="result">...</h1>
-      </div>
-      <div>
-        <p class="warning">* não compartilhe esse link com ninguém para não estragar a brincadeira!</p>
-      </div>
+      <section id="ads"></section>
+
+      <section id="content">
+        <h3 id="top">Leonardo</h3>
+        <h1 id="result">Você tirou a Bruna no amigo secreto</h1>
+      </section>
+      <section>
+        <p class="warning">*Não compartilhe esse link com ninguém para não estragar a brincadeira!</p>
+      </section>
+
+      <section class="share">
+        <p>Compartilhe o aplicativo</p>
+        <div class="share__link">
+          <a href="#"><img src="./assets/Download_on_the_App_Store_Badge_PTBR_RGB_blk_092917.svg" alt="Disponível na Apple Store"></a>
+          <a href="#"><img src="./assets/google-play-badge.png" alt="Disponível no Google Play Store" style="width: 119.667px;"></a>
+        </div>
+      </section>
 
       <script src="main.js"></script>
     </main>
 
     <footer>
-      <!-- <h1><img src="Images/logoMafagrafos.png"></h1> -->
+      <img src="Images/logoMafagrafos.png" alt="Logo da Mafagrafos">
       <p class="copyright">&copy; Copyright Mafagrafos Ltda.</p>
     </footer>
   </body>
