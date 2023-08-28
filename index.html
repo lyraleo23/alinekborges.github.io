@@ -19,26 +19,34 @@
 
       <section class="logo">
         <h1>Amigo Secreto</h1>
-        <img src="Images/logo.png" alt="Logo aplicativo amigo secreto">
+        <img src="./assets/logo.png" alt="Logo aplicativo amigo secreto">
       </section>
     </header>
 
     <main>
       <section id="ads"></section>
 
-      <section id="content">
-        <h3 id="top">Leonardo</h3>
-        <h1 id="result">Você tirou a Bruna no amigo secreto</h1>
+      <section class="content">
+        <div class="content__text">
+          <p id="top">Leonardo</p>
+          <h2 id="result">Você tirou a Bruna no amigo secreto</h2>
+        </div>
+        
+        <div class="content__image">
+          <img src="./assets/giving-present.jpg" alt="Vista lateral de menina dando presente para a mãe">
+          <p class="content__image__ref">Imagem de <a href="https://br.freepik.com/fotos-gratis/vista-lateral-menina-dando-presente-para-a-mae_7322743.htm#query=amigo%20secreto%20presente&position=1&from_view=search&track=ais">Freepik</a></p>
+        </div>
       </section>
+
       <section>
         <p class="warning">*Não compartilhe esse link com ninguém para não estragar a brincadeira!</p>
       </section>
 
       <section class="share">
-        <p>Compartilhe o aplicativo</p>
+        <h3>Compartilhe o aplicativo</h3>
         <div class="share__link">
-          <a href="#"><img src="./assets/Download_on_the_App_Store_Badge_PTBR_RGB_blk_092917.svg" alt="Disponível na Apple Store"></a>
-          <a href="#"><img src="./assets/google-play-badge.png" alt="Disponível no Google Play Store" style="width: 119.667px;"></a>
+          <a href="#"><img class="share__image" src="./assets/Download_on_the_App_Store_Badge_PTBR_RGB_blk_092917.svg" alt="Disponível na Apple Store"></a>
+          <a href="#"><img class="share__image" style="max-width: 130px;" src="./assets/google-play-badge.png" alt="Disponível no Google Play Store"></a>
         </div>
       </section>
 
@@ -46,7 +54,7 @@
     </main>
 
     <footer>
-      <img src="Images/logoMafagrafos.png" alt="Logo da Mafagrafos">
+      <img src="./assets/logoMafagrafos.png" alt="Logo da Mafagrafos">
       <p class="copyright">&copy; Copyright Mafagrafos Ltda.</p>
     </footer>
   </body>
