@@ -28,7 +28,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2% 2%;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,6 +35,7 @@ header {
   display: flex;
   justify-content: center;
   gap: 80px;
+  padding: 1% 0;
 }
 
 .nav__link {
@@ -45,21 +45,23 @@ header {
 
 .logo {
   text-align: center;
-  padding: 10px 0;
-}
-
-.logo__image {
-  max-width: 5%;
+  padding: 1%;
 }
 
 .logo__title {
   color: var(--secundary-text-color);
   font-size: 2.25rem;
-  padding: 0 0 1% 0;
 }
 
-main {
-  padding: 5% 0;
+.logo__image {
+  max-width: 5%;
+  padding: 1%;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  padding: 1% 0;
   background: var(--secundary-color);
   background: -webkit-linear-gradient(to right, var(--primary-color), var(--secundary-color));
   background: linear-gradient(to right, var(--primary-color), var(--secundary-color));
@@ -67,17 +69,13 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.content {
-  display: grid;
-  grid-template-columns: 30% 40% 30%;
-}
-
 .content__text {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 20px;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .content__text-strong {
@@ -85,15 +83,15 @@ main {
 }
 
 .content__text__result {
-  font-size: 2rem;
+  font-size: 3.5rem;
   color: black;
+  font-weight: 700;
 }
 
 .content__image {
   display: flex;
   flex-direction: column;
   padding: 0 2% 0 0;
-  /* width: 20%; */
 }
 
 .content__image-ref {
@@ -103,11 +101,11 @@ main {
 
 .warning {
   background-color: var(--warning-background-color);
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 300;
-  padding: 15px;
+  padding: 10px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin: 1% 0;
   text-align: center;
 }
 
@@ -116,8 +114,12 @@ main {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
+}
 
+.share__title {
+  font-weight: 700;
+  color: var(--secundary-text-color);
 }
 
 .share__link {
@@ -125,11 +127,6 @@ main {
   justify-content: space-around;
   align-items: center;
   gap: 10%;
-}
-
-.share__image {
-  /* width: 100%; */
-  /* max-width: 119.667px; */
 }
 
 footer {
@@ -142,4 +139,27 @@ footer {
   color: #666;
   font-size: 1rem;
   margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: 2% 0;
+  }
+
+  .content__text {
+    font-size: 1.5rem;
+  }
+
+  .content__text__result {
+    font-size: 2.0rem;
+  }
+
+  .content__image {
+    display: none;
+    padding: 0;
+    width: 0%;
+  }
 }
